@@ -48,7 +48,7 @@ exports['nabu'] = {
     
     nabu.md = function(string) { test.ok(string, "A string of markdown to parse"); return "Markdowned!"; };
 
-    nabu_pages.parse(nabu, function(err, nabu){
+    nabu_pages(nabu, function(err, nabu){
       test.ok(nabu.site.pages, "There shold be a nabu pages object");
       test.equal(nabu.site.pages.length, 1, "There shold be one page");
       test.equal(nabu.site.pages[0].content, "Markdowned!", "The markdown was parsed");

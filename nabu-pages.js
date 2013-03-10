@@ -14,17 +14,18 @@ var path = require('path'),
 
 var contentFolder = '_pages';
 
-exports.parse = function(nabu, callback) {
+function parse(nabu, callback) {
   var pages = nabu.files.find(nabu._files, function(file){ 
     return (file.indexOf('./_') !== 0 && nabu.files.isMarkdownFile(file));
   });
 
-  this.steps = function(post, callback){
+  async.map(pages, function(post, callback){
     nabu.parse(post, callback);
-  };
-
-  async.map(pages, this.steps, function(err, results){
+  }, 
+  function(err, results){
     nabu.site.pages = results.reverse();
     callback(err, nabu);
   });
-};
+}
+
+exports = module.exports = parse;
