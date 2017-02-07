@@ -1,5 +1,7 @@
 # nabu-blog
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mattmcmanus/nabu-pages.svg)](https://greenkeeper.io/)
+
 daw
 
 ## Setup
