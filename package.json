@@ -29,17 +29,17 @@
     "test": "grunt nodeunit"
   },
   "dependencies": {
-    "async": "~0.2.5",
-    "yaml-front-matter": "~1.0.3"
+    "async": "~2.1.4",
+    "yaml-front-matter": "~3.4.0"
   },
   "peerDependencies": {
     "nabu": "0.1.x"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.1.1",
-    "grunt-contrib-nodeunit": "~0.1.2",
-    "grunt-contrib-watch": "~0.2.0",
-    "grunt": "~0.4.0"
+    "grunt-contrib-jshint": "~1.1.0",
+    "grunt-contrib-nodeunit": "~1.0.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt": "~1.0.1"
   },
   "keywords": []
 }
